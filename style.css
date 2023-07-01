@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+input {
+  padding: 9px;
+  font-size: 15px;
+  border-radius: 9px;
+  margin: 5px;
+}
+
+button {
+  padding: 9px;
+  font-size: 15px;
+  border-radius: 9px;
+  margin: 5px;
+}
+
+h2 {
+  text-align: center;
+}
+
+header {
+  width: 100%;
+  font-size: 34px;
+  height: 50px;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+main {
+  width: 100%;
+  height: calc(100vh - 50px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.grid {
+  display: none;
+}
+
+.game-options {
+  top: -150px;
+  position: relative;
+  margin: auto;
+}
+
+.game-options form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.show-item {
+  display: none;
+  transform-style: preserve-3d;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  font-size: 55px;
+  /* color: #fff; */
+  transform: inherit;
+  background-color: rgb(48, 33, 207);
+}
+
+.hide-item {
+  background-color: rgb(109, 28, 28);
+  padding: 2px;
+  margin: 2px;
+  transform-style: preserve-3d;
+  position: relative;
+}
+
+.disabled {
+  background-color: #a3a1a142;
+  pointer-events: none;
+}
+
+.disabled .show-item {
+  display: none !important;
+}
+
+.game-over {
+  display: none;
+  top: 0;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 44px;
+  width: 100%;
+  height: 100vh;
+  background-color: #000;
+  color: #fff;
+  pointer-events: none;
+}
+
+.win {
+  top: 0;
+  position: absolute;
+  /* display: flex; */
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 44px;
+  width: 100%;
+  height: 100vh;  
+  background-color: #9108b7;
+  color: #fff;
+  pointer-events: none;
+}
+
+.you-win {
+  display: none;
+}
+
+.win .you-win {
+  display: block;
+}
+
+.restart-btn {
+  pointer-events: all;
+  cursor: pointer;
+}

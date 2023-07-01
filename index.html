@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Memory Game</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="./style.css" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      Memory Game
+      <div id="timer" class="timer"></div>
+    </header>
+    <main id="root">
+      <section class="grid" id="grid-root"></section>
+      <section id="options-container" class="game-options">
+        <h2>Game options:</h2>
+        <form id="options-form">
+          <label for="size">Block size:</label>
+          <input name="size" id="size" type="number" placeholder="100" value="215" max="250">
+          <label for="number">Number of columns and rows:</label>
+          <input name="number" id="number" value="5" type="number" minlength="1" max="5">
+          <label for="time">Time of Game:</label>
+          <input name="time" id="time" value="60" type="number" placeholder="60" max="120">
+          <button id="submit-btn" type="submit">Start the Game !!!</button>
+        </form>
+      </section>
+      <section id="end-root" class="game-over">
+        Game Over !
+        <p class="you-win">You Win !!!</p>
+        <button id="restart-btn" class="restart-btn">Restart</button>
+      </section>
+    </main>
+
+    <script type="module" src="./scripts/main.js"></script>
+    <script src="./lib/anime.min.js"></script>
+  </body>
+</html>
